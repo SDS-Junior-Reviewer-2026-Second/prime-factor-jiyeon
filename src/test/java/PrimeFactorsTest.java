@@ -9,8 +9,14 @@ public class PrimeFactorsTest {
 
 	@Test
 	public void testPrimefactor0f1() {
-		PrimeFactors primefactor = new PrimeFactors();
-		assertEquals(Arrays.asList(), primefactor.of(1));
+		PrimeFactors primefactors = new PrimeFactors();
+		assertEquals(Arrays.asList(), primefactors.of(1));
+	}
+
+	@Test
+	void testPrimeFactorOf2() {
+		PrimeFactors primefactors = new PrimeFactors();
+		assertEquals(Arrays.asList(2), primefactors.of(2));
 	}
 
 }
